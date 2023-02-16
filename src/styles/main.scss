@@ -83,7 +83,10 @@ body {
         transition: transform 1s ease; 
     }
 
-    
+    .move-one{
+        transform: translateX(20px); 
+        transition: transform 1s ease; 
+    }
 
     .move-two{
         transform: translateX(20px); 

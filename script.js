@@ -10,6 +10,57 @@ const body = document.querySelector('body')
 
 
 
+function themeBlue() {
+    const circle = document.querySelector('.circle')
+    circle.classList.add('move-one')
+    circle.classList.remove('move-three')
+    circle.classList.remove('move-two')
+
+    const body = document.querySelector('body')
+    const input = document.querySelector('.input');
+    const h2 = document.querySelector('h2')
+    const check_Themes = document.querySelector('.check-themes')
+    const section_Two = document.querySelector('.numbers')
+    const h3 = document.querySelector('h3')
+
+    circle.style.background = '#D03F2F'
+    body.style.background = '#3A4663'
+    h2.style.color = '#fff'
+    check_Themes.style.background = '#242D44'
+    section_Two.style.color = '#fff'
+    h3.style.color = '#fff'
+    // input
+    input.style.background = '#181F33'
+    input.style.color = '#fff'
+
+    const container_calculator = document.querySelector('.section-calculator')
+    container_calculator.style.background = '#242D44'
+    
+
+    // Tive que usar um laço foi pq a propriedade querySelectAll retorna um array com varis botões e se pegasse simplesmente o botão e mudasse a cor só iria muda o botão do indice 0 
+    // Então fiz um laço for para percorrer todos os botões:
+
+    const button = document.querySelectorAll('.bnt')
+     
+    for (let i = 0; i < button.length; i++) {
+        button[i].style.color = '#434A59'
+        button[i].style.background = '#EAE3DC'
+        button[i].style.boxShadow = 'inset 0px -4px 0px #A79E91'    
+    }
+
+    const reset = document.querySelector('.reset')
+
+    reset.style.background = '#647198'
+    reset.style.boxShadow = 'inset 0px -4px 0px #414e73'
+    
+
+    const result = document.querySelector('.result')
+
+    result.style.background = '#D03F2F'
+    result.style.color = '#fff'
+    result.style.boxShadow = 'inset 0px -4px 0px #93261A'
+}
+
 
 function themeWhite() {
     const circle = document.querySelector('.circle')
@@ -45,8 +96,7 @@ function themeWhite() {
     for (let i = 0; i < button.length; i++) {
         button[i].style.color = '#36362C'
         button[i].style.background = '#EAE3DC'
-       
-        
+        button[i].style.boxShadow = 'inset 0px -4px 0px #A79E91'    
     }
 
     const reset = document.querySelector('.reset')
@@ -58,6 +108,7 @@ function themeWhite() {
 
     result.style.background = '#D03F2F'
     result.style.color = '#fff'
+    result.style.boxShadow = 'inset 0px -4px 0px #873901'
 }
 
 function blueDark(){
