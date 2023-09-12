@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/input.css">
+    <link rel="stylesheet" href="./src/styles/calculator-number.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;700;900&family=Unbounded:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <div class="section-one">
+        <h2>calc</h2>
+        <div class="section-two">
+            <h3>THEME</h3>
+            <div class="numbers-inputs">
+                <div class="numbers">
+                    <p class="one" onclick="themeBlue()">1</p>
+                    <p class="two" onclick="themeWhite()">2</p>
+                    <p class="three" onclick="themeDark()">3</p>
+                </div>
+                <div class="check-themes">
+                    <div class="circle move-one">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-input">
+        <input type="text" class="input">
+    </div>
+
+    <div class="section-calculator">
+        <button class="bnt" onclick="valueOnScreen(7)">7</button>
+        <button class="bnt" onclick="valueOnScreen(8)">8</button>
+        <button class="bnt" onclick="valueOnScreen(9)">9</button>
+        <button class="bnt" onclick="del()">DEL</button>
+        <button class="bnt" onclick="valueOnScreen(4)">4</button>
+        <button class="bnt" onclick="valueOnScreen(5)">5</button>
+        <button class="bnt" onclick="valueOnScreen(6)">6</button>
+        <button class="bnt" onclick="valueOnScreen('+')">+</button>
+        <button class="bnt" onclick="valueOnScreen(1)">1</button>
+        <button class="bnt" onclick="valueOnScreen(2)">2</button>
+        <button class="bnt" onclick="valueOnScreen(3)">3</button>
+        <button class="bnt" onclick="valueOnScreen('-')">-</button>
+        <button class="bnt" onclick="valueOnScreen('.')">.</button>
+        <button class="bnt" onclick="valueOnScreen(0)">0</button>
+        <button class="bnt" onclick="valueOnScreen('/')">/</button>
+        <button class="bnt" onclick="valueOnScreen('*')">x</button>
+        <button class="reset btn" onclick=" reset()">RESET</button>
+        <button class="result bnt" onclick="calculate()">=</button>
+
+    </div>
+</body>
+
+<script src="./script.js"></script>
+
+
+</html>
